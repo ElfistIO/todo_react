@@ -1,0 +1,67 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "username": "typicode1",
+      "email": "typicode@gmail.com",
+      "text": "typicode 111",
+      "status": 0
+    },
+    {
+      "id": 2,
+      "username": "typicode2",
+      "email": "222@gmail.com",
+      "text": "typicode 222",
+      "status": 0
+    },
+    {
+      "id": 3,
+      "username": "typicode3",
+      "email": "333@gmail.com",
+      "text": "typicode 333",
+      "status": 0
+    },
+    {
+      "id": 4,
+      "username": "typicode4",
+      "email": "444@gmail.com",
+      "text": "typicode 444",
+      "status": 0
+    },
+    {
+      "id": 5,
+      "username": "typicode5",
+      "email": "555@gmail.com",
+      "text": "typicode 555",
+      "status": 0
+    },
+    {
+      "id": "KyWDXsAPQc_rPJlz9c7sA",
+      "username": "asdasd",
+      "email": "sdasd@asdasd",
+      "text": "asdasd",
+      "status": 0
+    },
+    {
+      "id": "LLA1Dwms-dd5E3f0mvrnA",
+      "username": "asdasd",
+      "email": "asdasd@as1213",
+      "text": "123123123123",
+      "status": 0
+    },
+    {
+      "id": "AtbRvsAtpcOwAA2eI6jlR",
+      "username": "dfgfdsgdfg",
+      "email": "sdfgdfg@sdfsf",
+      "text": "sdfsfsdgfdgg",
+      "status": 0
+    },
+    {
+      "id": "eaETH_ntYeQj8bPvn5F_2",
+      "username": "dsfgdsfg",
+      "email": "dsgdsfg@q23123",
+      "text": "raewr34541 5rewfds",
+      "status": 0
+    }
+  ]
+}

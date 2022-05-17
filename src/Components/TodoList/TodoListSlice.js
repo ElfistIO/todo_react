@@ -46,16 +46,3 @@ export function fetchTodos() {
       });
   };
 }
-
-// export function fetchPaginateTodos(itemOffset, endOffset) {
-//   return async (dispatch) => {
-//     axios
-//       .get(API_URL)
-//       .then((response) => {
-//         dispatch(setTodos(response.data.slice(itemOffset, endOffset)));
-//       })
-//       .catch((error) => {
-//         dispatch(setError(error.message));
-//       });
-//   };
-// }

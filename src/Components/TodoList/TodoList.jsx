@@ -19,16 +19,12 @@ export const TodoList = ({ itemsPerPage }) => {
 
   useEffect(() => {
     const endOffset = itemOffset + itemsPerPage;
-    console.log(`Loading items from ${itemOffset} to ${endOffset}`);
     setPaginateTodos(todos.slice(itemOffset, endOffset));
     setPageCount(Math.ceil(todos.length / itemsPerPage));
   }, [itemOffset, itemsPerPage, todos]);
 
   const handlePageClick = (event) => {
     const newOffset = (event.selected * itemsPerPage) % todos.length;
-    console.log(
-      `User requested page number ${event.selected}, which is offset ${newOffset}`
-    );
     setItemOffset(newOffset);
   };
 

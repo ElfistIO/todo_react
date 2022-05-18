@@ -22,7 +22,8 @@ export const NewTodo = () => {
         })
         .catch((error) => {
           console.log(error.message);
-        });
+        })
+        .finally(dispatch(fetchTodos()));
     };
   }
 
@@ -32,12 +33,12 @@ export const NewTodo = () => {
       return;
     } else {
       dispatch(createNewTodo(username, email, text));
-      dispatch(fetchTodos());
       setUsername("");
       setEmail("");
       setText("");
     }
   };
+
   return (
     <div className="container">
       <div className="row container">

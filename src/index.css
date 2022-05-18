@@ -12,6 +12,10 @@ code {
     monospace;
 }
 
+.mb-0 {
+  margin-bottom: 0px;
+}
+
 .mt-20 {
   margin-top: 20px;
 }

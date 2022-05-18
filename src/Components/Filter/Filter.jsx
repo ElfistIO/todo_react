@@ -3,9 +3,11 @@ import { setTodos, setError } from "../TodoList/TodoListSlice";
 import axios from "axios";
 import { API_URL } from "../TodoList/TodoListSlice";
 import M from "materialize-css";
+import { useState } from "react";
 
 export const Filter = () => {
   const dispatch = useDispatch();
+  const [filterText, setFilterText] = useState("...");
   M.AutoInit();
 
   function handleUsernameFilter() {
@@ -17,7 +19,8 @@ export const Filter = () => {
         })
         .catch((error) => {
           dispatch(setError(error.message));
-        });
+        })
+        .finally(setFilterText("Username"));
     };
   }
 
@@ -30,7 +33,8 @@ export const Filter = () => {
         })
         .catch((error) => {
           dispatch(setError(error.message));
-        });
+        })
+        .finally(setFilterText("Email"));
     };
   }
   function handleStatusFilter() {
@@ -42,14 +46,16 @@ export const Filter = () => {
         })
         .catch((error) => {
           dispatch(setError(error.message));
-        });
+        })
+        .finally(setFilterText("Status"));
     };
   }
   return (
     <div className="row container">
       <span>Filter by : </span>
       <button className="dropdown-trigger btn-small" data-target="dropdown2">
-        ...<i className="material-icons right">arrow_drop_down</i>
+        {filterText}
+        <i className="material-icons right">arrow_drop_down</i>
       </button>
       <ul id="dropdown2" className="dropdown-content">
         <li>
